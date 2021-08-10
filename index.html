@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile first</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- goggle fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <!-- bs5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-xl">
+      <a href="#hero" class="navbar-brand">
+        <h1>Web Development</br> looking for EXP</h1>
+      </a>
+        <!-- toggle button for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end allign-center"
+      id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#home" class="nav-link text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio"" class="nav-link text-muted">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link text-muted">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link text-muted">Contact</a>
+          </li>          
+        </ul>
+      </div>
+      </div>
+  </nav>
+  <section id="welcome" class="grid">
+    <div class="welocome-text">
+      <h2>Hi I am Kurt and welcome<br/>To my Portfolio</h2>
+      <p class="leading text-muted">This is just a few of my projects and skill I have learned in Front End Development.</p>
+      <a href="#portfolio" class="button">View my work</a>
+    </div>
+      <div class="welcome-img">        
+          <figure>
+            <img src="/assets/computer.jpg" alt="computer set up">
+            <figcaption class="text-muted text-center">Photo by <a href="https://unsplash.com/@goshua13?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Aragon</a> on <a href="https://unsplash.com/s/photos/portfolio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </figcaption>
+          </figure>    
+      </div>
+  </section>
+  <section id="portfolio">
+    <h3>Some of my Projects</h3>
+    <div class=" projects grid">
+      <a href="https://testlandingpage1.netlify.app/" target="_blank">        
+          <figure>
+            <img  src="/assets/web1.png" alt="first landing page">
+          </figure>       
+        <h4>First Landing page</h4>
+      </a>
+      <a href="https://bootstrap-landing-page-copy.netlify.app/" target="_blank">
+        <img src="/assets/web2.png" alt="project 2">
+        <h4>bootstrap5 landing page</h4>
+      </a>
+      <a href="https://3-card-column-bottstrap5.netlify.app/" target="_blank">
+        <img src="/assets/web3.png" alt="project 3">
+        <h4>3 card column page</h4>
+      </a>
+    </div>
+  </section>
+  <section id="skills">
+    <h3>Things I Can Do</h3>
+    <ul class="grid">
+      <li>
+        <i class="fab fa-html5"></i>
+          <h4>HTML</h4>
+        </img>
+      </li>
+      <li>
+        <i class="fab fa-bootstrap"></i>
+          <h4>CSS/Bootstrap</h4>
+        </img>
+      </li>
+      <li>
+        <i class="fab fa-js"></i>
+          <h4>JavaScript</h4>
+        </img>
+      </li>
+      <li>
+        <i class="fab fa-microsoft"></i>
+          <h4>Microsoft Office</h4>
+        </img>
+      </li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h3>Get in touch</h3>
+    <p class="leading">Under Construction.</p>
+    <form action="https://formsubmit.co/d46a6b4b12bd1ff5102ef7609f0566bc" method="POST">
+      <!-- honeypot -->
+      <input type="text" name="_honey" style="display: none;">
+      <!-- disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="">
+      <input type="text" name="NAME" required>
+      <input type="email" name="EMAIL" required>
+      <textarea name="YOUR&nbsp;MESSAGE"></textarea>
+      <button class="button"type="submit">Submit</button>
+    </form>
+  </section>
+  <footer>
+    <div class="grid">
+      <p class="copyright">Copyright &copy; 2021</p>
+      <p class="name">Kurt Metzelfeld</p>
+      <ul class="social">
+        <li><a href="https://github.com/kmetz73"target="_blank">
+          <i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/kurt-metzelfeld-85070766/"
+          target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
